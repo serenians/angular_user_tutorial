@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './component/nav/nav.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { UserService } from './service/user.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,9 @@ import { UserService } from './service/user.service';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [UserService],
   bootstrap: [AppComponent]
