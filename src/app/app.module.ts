@@ -1,10 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http'
 
 import { AppRoutingModule, RoutedComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './component/nav/nav.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { UserService } from './service/user.service';
 
 @NgModule({
   declarations: [
@@ -15,9 +17,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule.forRoot()
+    NgbModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

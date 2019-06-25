@@ -4,6 +4,7 @@ import { HomeComponent } from './component/home/home.component';
 import { UserNewComponent } from './component/user-new/user-new.component';
 import { UserListComponent } from './component/user-list/user-list.component';
 import { NotFoundComponent } from './component/not-found/not-found.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
